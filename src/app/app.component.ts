@@ -9,4 +9,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'poyecto5';
+  constructor() {
+    // this.router.navigate(['/home']);
+    console.log('Cuidado');
+    console.warn('Esto es una advertencia');
+    console.log('Pruebas de conflictos');
+  }
 }
