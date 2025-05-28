@@ -1,8 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-perfiles',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './Perfiles.component.html',
   styles: `
     :host {
@@ -11,4 +12,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PerfilesComponent { }
+export class PerfilesComponent {
+perfiles: any;
+}
