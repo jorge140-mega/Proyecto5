@@ -11,4 +11,10 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class UsuariosComponent { }
+export class UsuariosComponent {
+  
+  constructor(){
+
+  }
+
+}
