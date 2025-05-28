@@ -11,4 +11,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProductosComponent { }
+export class ProductoComponent {
+  nombre: string = 'Camisa polo';
+  precio: number = 399.99;
+}
