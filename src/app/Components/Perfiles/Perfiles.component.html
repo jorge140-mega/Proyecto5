@@ -1,1 +1,14 @@
-<p>Perfiles works!</p>,
+<div class="profiles-container">
+  <h2>Perfiles de Usuario</h2>
+  <div class="profile-card" *ngFor="let perfil of perfiles">
+    <img [src]="perfil.fotoUrl" alt="Foto de {{perfil.nombre}}" class="profile-photo">
+    <div class="profile-info">
+      <h3>{{ perfil.nombre }}</h3>
+      <p>{{ perfil.descripcion }}</p>
+      <ul>
+        <li><strong>Email:</strong> {{ perfil.email }}</li>
+        <li><strong>Teléfono:</strong> {{ perfil.telefono }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
